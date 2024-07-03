@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
 }
-.airbnb-main-section{
+.airbnb-main-section,.txt,.text-2{
     display: flex;
     justify-content: space-evenly;
+  
 }
 #logo{
     width: 150px;
     height: 50px;
     position: relative;
-    right:10em;
+    /* right:10em; */
 }
 #internet{
     width: 16px;
@@ -32,7 +33,7 @@
     text-align: end;
 }
 .bnt1{
-    margin-top: 4em;
+    /* margin-top: 4em; */
     background-color:white;
     color: black;
     width: 284px;
@@ -48,15 +49,19 @@
 }
 .bnt{
     position: relative;
-    bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid black;
 }
 .main-button{
-   position: relative;
-
-   margin-left: 17em;
-   border: 1px solid grey;
-   width: 65%;
-   border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 17em; */
+   
 }
 .small-images{
     display: flex;
@@ -171,13 +176,22 @@
 span{
     display: block;
 }
+.bnt-for-respo{
+    width: 100%;
+    border: 1px solid grey;
+    /* padding: 10px; */
+    border-radius: 50px;
+}
+.main-button-for-responce{
+    display: none;
+}
 @media only screen and (max-width: 1800px){
     .sub-pictures{
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: repeat(6);
     }
-    .last-section-1,.canmore,.main-button,.second-text,.first-text,.footer3-grid-txt{
+    .last-section-1,.footer3-grid-txt{
         display: none;
     }
 
@@ -234,6 +248,16 @@ span{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4,1fr);
     }
+    .main-button{
+        display: none;
+    }
+    .main-button-for-responce{
+        display: contents;
+        margin: 20px;
+    }
+    .airbnb-main-section{
+        width: 60%;
+    }
 }
 @media only screen and (max-width: 420px){
     .sub-pictures{
@@ -250,6 +274,10 @@ span{
     #logo{
         text-align: center;
     }
+    .second-text,.first-text{
+        display: none;
+    }
+
 }
 @media only screen and (max-width:380px){
     .sub-pictures{
@@ -266,10 +294,19 @@ span{
     #logo{
         text-align: center;
     }
+    .canmore{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .main-button-for-responce
+    {
+        margin: 20px;
+        display: none;
+    }
 }
 
-/* 
-@media only screen and (max-width: 1437){
+
+/* @media only screen and (max-width: 1437){
     .sub-pictures{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -302,6 +339,7 @@ span{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4);
     }
+  
 }
 @media only screen and (max-width:420){
     .sub-pictures{
@@ -336,8 +374,8 @@ span{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(4);
     }
-} */
+}
 
 
 
-
+ */
